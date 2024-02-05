@@ -1,0 +1,19 @@
+when you start:
+git config --global user.name "Sarang Kashalkar"
+git config --global user.email sarang.kashalkar@apptware.com
+
+initialize branch name:
+git config --global init.default branch branch_ka_naam
+
+initialize empty git repo:
+git init 
+
+how to find status of git (which files updated, or has to be pushed):
+git status
+
+Now suppose you have multiple files where you made changes, now you want to add it to git :
+git add scripts.txt
+
+if you want a file to be untracked:
+git rm --cached scripts.txt 
+
