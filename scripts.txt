@@ -20,3 +20,13 @@ git rm --cached scripts.txt
 to track all the files in one go:
 git add .
 
+Now commit is kind of a photograph or checkpoint or a point at which we save that level:
+git commit -m "isme msg likho ki kya checkpoint save kiya hai"
+
+to see what changes u made:
+git log --oneline
+
+if u want to jump back to previous commit (purana jo update h)
+git reset (code value 9c4822) etc (but without paranthesis)
+
+
