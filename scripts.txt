@@ -17,3 +17,6 @@ git add scripts.txt
 if you want a file to be untracked:
 git rm --cached scripts.txt 
 
+to track all the files in one go:
+git add .
+
