@@ -29,4 +29,27 @@ git log --oneline
 if u want to jump back to previous commit (purana jo update h)
 git reset (code value 9c4822) etc (but without paranthesis)
 
+create new branch to make changes (test and if works, PR):
+git branch New_branch_ka_naam
+
+
+to know how many branches are there:
+git branch
+
+For eg, there are a,b,c and main branch .. and you want to switch branches :
+git switch a 
+This will switch to branch a: 
+Now make changes in branch a, if it looks good:
+git commit -a -m "jo bhi update mara h, likh do"
+
+Now switch to main branch 
+git switch master (ya main jo bhi name h)
+git will show previous main branch only, but not the one pushed from branch a 
+so u need to merge the code:
+git merge -m "u r in main branch, and you are accepting the commit made by branch a" a
+the last a written above is the name of the branch 
+
+Now since your 'a' branch is merged to main, you can delete it
+git branch -d a 
+
 
