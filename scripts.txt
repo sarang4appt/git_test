@@ -56,3 +56,9 @@ Now since your 'a' branch is merged to main, you can delete it
 git branch -d a 
 
 
+Both git branch new_branch and git checkout -b new_branch are used to create a new branch in a Git repository, but they have slightly different behaviors:
+git branch new_branch: This command creates a new branch named new_branch but does not switch to it. It simply creates the branch at the current commit, leaving you on your current branch. You would need to use git checkout new_branch or git switch new_branch to switch to the newly created branch.
+git checkout -b new_branch: This command creates a new branch named new_branch and switches to it immediately. It is essentially a combination of git branch new_branch and git checkout new_branch in one step. This is a convenient shortcut if you want to create and switch to a new branch in a single command.
+In summary:
+Use git branch new_branch if you want to create a new branch without switching to it immediately.
+Use git checkout -b new_branch if you want to create a new branch and switch to it in a single command.
